@@ -9,6 +9,7 @@ const Main = () => {
         <Text style={styles.title}>QLH?</Text>
         <Text style={styles.subtitle}>Quién lo hace?</Text>
         <Searchbar />
+        
     </View>
     )
 }
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#FF9110',
         fontSize: 80,
-        fontWeight: 'Light',
+        fontWeight: 'light',
         textShadowColor: '#000000',  // Color del sombreado
         textShadowOffset: {       // Desplazamiento del sombreado
             width: 1,
@@ -38,12 +39,17 @@ const styles = StyleSheet.create({
     marginTop: 40,           // Margen superior de 40
     marginHorizontal: 'auto', // Centra horizontalmente
     marginBottom: 0,         // Margen inferior de 0   
-    letterSpacing: 3     
+    textAlign: 'center', // Centra horizontalmente el texto
+    letterSpacing: 2.4,
+    fontFamily: 'Prompt-Light.ttf',
+    wordWrap: 'break-word'
         
     },
     subtitle: {
         color: '#FFFFFF',
         fontSize: 16,
+        fontFamily: 'Prompt-Light.ttf',
+        fontWeight: 400
     },
 })
 

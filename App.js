@@ -2,6 +2,7 @@ import React from 'react';
 // import { StyleSheet } from 'react-native';
 import Main from "./src/Components/Main";
 
+
 export default function App() {
   return <Main /> 
 }
