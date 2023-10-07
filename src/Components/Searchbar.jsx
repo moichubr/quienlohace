@@ -1,30 +1,67 @@
 import React from "react";
-import {View, Text, TextInput, TouchableHighlight, TouchableWithoutFeedback, StyleSheet} from "react-native"
+import {View, Text, TextInput, Pressable, StyleSheet} from "react-native"
 // import Rnepicture from "./RNEpicture";
 
+import { useNavigate } from "react-router-native";
+
 const Searchbar = () => {
+  const navigate = useNavigate();
 
-    return(
-        <View style={styles.container}>
-            <Text style={styles.title}>Ingresa el R.N.E</Text>
-            <TextInput style={styles.input} placeholder="02000167"></TextInput>
-            <TouchableHighlight style={styles.button}>
-                <Text style={styles.text}>BUSCAR</Text>
-            </TouchableHighlight>
+  const handleNavigateToWhere = () => {
+    navigate("/where");
+  };
 
-            <TouchableWithoutFeedback>
-                <Text style={styles.firstanchor}>Dónde está el R.N.E en el producto?</Text>
-            </TouchableWithoutFeedback>
+  const handleNavigateToWhat = () => {
+    navigate("/what");
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Ingresa el R.N.E</Text>
+      <TextInput style={styles.input} placeholder="02000167"></TextInput>
+
+      <Pressable style={styles.button}>
+        <Text style={styles.text}>BUSCAR</Text>
+      </Pressable>
+
+      <Pressable onPress={handleNavigateToWhere}>
+        <Text style={styles.firstanchor}>Dónde está el R.N.E en el producto?</Text>
+      </Pressable>
+
+      <Pressable onPress={handleNavigateToWhat}>
+        <Text style={styles.secondanchor}>Qué es el R.N.E?</Text>
+      </Pressable>
+    </View>
+  );
+};
+
+// const Searchbar = () => {
+
+//     return(
+//         <View style={styles.container}>
+//             <Text style={styles.title}>Ingresa el R.N.E</Text>
+//             <TextInput style={styles.input} placeholder="02000167"></TextInput>
+
+//             <Pressable style={styles.button}>
+//                 <Text style={styles.text}>BUSCAR</Text>
+//             </Pressable>
+
+
+//                 <Link to="/rnepic" component={RNEpicture}>
+//                     <Text style={styles.firstanchor}>Dónde está el R.N.E en el producto?</Text> 
+//                 </Link>
+
+//                 <Link to="/whatIsIt" component={WhatIsIt}>
+//                 <Text style={styles.secondanchor}>Qué es el R.N.E?</Text>
+//                 </Link>
 
             
-            <TouchableWithoutFeedback>
-                <Text style={styles.secondanchor}>Qué es el R.N.E?</Text>
-            </TouchableWithoutFeedback>
-
             
-        </View>
-    )
-}
+//         </View>
+//     )
+// }
+
+//---- ESTILOS
 
 const styles = StyleSheet.create({
     container: {
