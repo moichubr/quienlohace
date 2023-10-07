@@ -1,6 +1,6 @@
 import React from "react";
 import {View, Text, StyleSheet} from "react-native"
-import Logo from "./Logo"
+import Logo from "../Components/Logo"
 import Constants from "expo-constants" 
 
 const WhatIsIt = () => {
@@ -9,7 +9,7 @@ const WhatIsIt = () => {
             <Logo />
             <View style={styles.viewcontainer}>
             <Text style={styles.title}>Registro Nacional de Establecimientos (RNE)</Text>
-            <Text  style={styles.text}>Previo al inicio de sus actividades, es necesario que los establecimientos productores, elaboradores y fracccionadores realicen los trámites de inscripción y autorización ante la autoridad sanitaria. Cuando la autoridad sanitaria autoriza el establecimiento, otorga un número de Registro Nacional que sirve para identificar QUÉ ESTABLECIMIENTO ELABORA DETERMINADO PRODUCTO.</Text>
+            <Text  style={styles.text}>Previo al inicio de sus actividades, es necesario que los establecimientos productores, elaboradores y fraccionadores de alimentos realicen los trámites de inscripción y autorización ante la autoridad sanitaria. Cuando la autoridad sanitaria autoriza el establecimiento, otorga un número de Registro Nacional que sirve para identificar <b>QUÉ ESTABLECIMIENTO ELABORA DETERMINADO PRODUCTO.</b></Text>
             </View>
                     </View>
     )

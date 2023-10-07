@@ -14,9 +14,9 @@ const Logo = () => {
 
 const styles = StyleSheet.create({
     title: {
-        color: '#FF9110',
+        color: '#450B52',
         fontSize: 80,
-        fontWeight: 'light',
+        fontWeight: '500',
         textShadowColor: '#000000',  // Color del sombreado
         textShadowOffset: {       // Desplazamiento del sombreado
             width: 1,
@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
         color: '#FFFFFF',
         fontSize: 16,
         fontFamily: 'Prompt-Light.ttf',
-        fontWeight: 400
+        fontWeight: 400,
+        marginHorizontal: 'auto'
     }
 })
 export default Logo

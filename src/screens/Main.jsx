@@ -1,8 +1,8 @@
 import React from "react"
 import { View, StyleSheet } from "react-native"
 import Constants from "expo-constants" //expo trae constantes ya declaradas que tienen default values para ciertas cosas
-import Searchbar from "./Searchbar"
-import Logo from "./Logo"
+import Searchbar from "../Components/Searchbar"
+import Logo from "../Components/Logo"
 
 
 const Main = () => {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     padding: 2,
-    backgroundImage: 'linear-gradient(0deg, rgb(255, 107, 0), rgb(55, 11, 82))',
+    backgroundImage: 'linear-gradient(0deg, rgb(55, 11, 82), rgb(255, 107, 0))',
     },
 })
 

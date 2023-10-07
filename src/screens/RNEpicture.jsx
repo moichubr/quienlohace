@@ -1,7 +1,7 @@
 import React from "react"
 import { View, Image, StyleSheet } from "react-native"
 import rne from "../../assets/RNE.jpg"
-import Logo from "./Logo"
+import Logo from "../Components/Logo"
 import Constants from "expo-constants" 
 
 
